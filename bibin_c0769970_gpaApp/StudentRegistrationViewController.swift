@@ -20,6 +20,7 @@ struct studentList {
 class StudentRegistrationViewController: UIViewController {
 
     
+    var nouArray = [studentList]()
     @IBOutlet weak var firstName: UITextField!
     
     
@@ -56,7 +57,14 @@ class StudentRegistrationViewController: UIViewController {
         
         else {
             
-           //  studentList(name: firstName, lastName: lastName, studentId: studentID)
+             let nouText = studentList(name: name, lastName: last, studentId: ID)
+               nouArray.append(nouText)
+            
+            print(nouArray[0].name)
+            print(nouArray[0].lastName)
+            
+            
+           // studentList(name: firstName, lastName: lastName, studentId: ID)
             
             
         }
