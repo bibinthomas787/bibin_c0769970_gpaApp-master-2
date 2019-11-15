@@ -8,6 +8,15 @@
 
 import UIKit
 
+struct studentList {
+    var name  : String
+    var lastName : String
+    var studentId : String
+}
+
+
+
+
 class StudentRegistrationViewController: UIViewController {
 
     
@@ -46,6 +55,8 @@ class StudentRegistrationViewController: UIViewController {
         }
         
         else {
+            
+           //  studentList(name: firstName, lastName: lastName, studentId: studentID)
             
             
         }
